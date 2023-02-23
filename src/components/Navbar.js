@@ -16,10 +16,11 @@ export default function Navbar() {
     }
 
     return (
-        <nav>
+        <nav className="primary-nav">
             {/* link is converted into an anchor tag in the dom */}
             <NavLink style={navLinkStyle} to='/' >Home</NavLink>
             <NavLink style={navLinkStyle} to='/about'>About</NavLink>
+            <NavLink style={navLinkStyle} to='/products'>Product</NavLink>
             <NavLink style={navLinkStyle} to='/contact'>Contact</NavLink>
         </nav>
     )

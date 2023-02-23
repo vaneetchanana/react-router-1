@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-nav {
+.primary-nav {
     display: flex;
     padding: 20px;
     background-color: lightblue;
