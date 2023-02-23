@@ -7,7 +7,7 @@ export default function UserDetail() {
   //It is important to note here that userId on the params object correponds to the dynamic segment we have specified in the route config :userId
   const userId = params.userId
 
-  //you can also destructure it
+  //you can also destructure itc
   // const {useId} = useParams()
   return (
     <div>Details of the user {userId}</div>
