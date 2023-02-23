@@ -20,6 +20,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/order-summary" element={<OrderSummary />} />
         <Route path="/products" element={<Products />}>
+          {/* index route: when you have nested routes and you want a route to be rendered at parent url use index route. Index route will contain index prop instead of path prop, the path would be the same as the parent route */}
+          <Route index element={<Featured />} />
+
           {/* what is special in the nested routes is that react router autimatically forms the full path to the children routes */}
           <Route path="featured" element={<Featured />} />
           <Route path="new" element={<New />} />
